@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user-service
+  config:
+    import: nacos:user-service.yaml
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        cluster-name: LH
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        name: application
+
